@@ -134,6 +134,7 @@
   </dependencies>
 
   <build>
+  <pluginManagement>
     <plugins>
       <plugin>
         <groupId>io.spring.javaformat</groupId>
@@ -278,6 +279,7 @@
         </dependencies>
       </plugin>
     </plugins>
+    </pluginManagement>
   </build>
 
   <licenses>
@@ -334,11 +336,10 @@
         </property>
       </activation>
       <build>
-        <pluginManagement>
           <plugins>
             <!-- This plugin's configuration is used to store Eclipse m2e settings
    only. It has no influence on the Maven build itself. -->
-            <plugin>
+            <!--plugin>
               <groupId>org.eclipse.m2e</groupId>
               <artifactId>lifecycle-mapping</artifactId>
               <version>1.0.0</version>
@@ -374,9 +375,8 @@
                   </pluginExecutions>
                 </lifecycleMappingMetadata>
               </configuration>
-            </plugin>
+            </plugin-->
           </plugins>
-        </pluginManagement>
       </build>
     </profile>
   </profiles>
